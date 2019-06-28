@@ -70,7 +70,11 @@ class Owner
     pets = dogs + cats
     pets.each {|pet| pet.mood = "nervous"}
     pets.each {|dog|  dog.owner = nil}
-    # binding.pry
+    # or you can do 
+    #     pets.each do |pet|
+    #       pets.mood = "nervous"
+    #        pets.owner = nil
+    # end
     
   end
 
